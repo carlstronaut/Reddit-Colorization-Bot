@@ -1,6 +1,6 @@
-# ID2221-Project
+# Reddit-Colorization-Bot 
 
-In this project we built a reddit bot that when triggered by a keyword, downloads a black and white image, colorize it, and responds with the colorized image. The project is inspired by the [color model](https://richzhang.github.io/colorization/) and bot built by Richard Zhang. Only the CNN from the aforementioned author is used, everything else is written from scratch. 
+In this project me and pornell@kth.se built a reddit bot that when triggered by a keyword, downloads a black and white image, colorize it, and responds with the colorized image. The project is inspired by the [color model](https://richzhang.github.io/colorization/) and bot built by Richard Zhang. Only the CNN from the aforementioned author is used, as well as a pre-built Kafka-Connector. Everything else is built from scratch.   
 
 We read and parse the data using Kafka and Spark-Streaming, as well as store partial results in Cassandra. Spark-Straming will if triggered by a keyword, call a Python script which downloads, colorizes and uploads a response with the colorized image. 
 
